@@ -21,6 +21,7 @@
   <tr><td>로그인 없이 앱 사용 시</td><td>푸시 알림 토큰, 기기 종류(안드로이드/iOS), 알림을 켠 브랜드 목록</td><td>신메뉴 알림 발송</td></tr>
   <tr><td>회원가입·로그인 시</td><td>카카오 또는 Apple 로그인으로 제공되는 회원 식별자, 이메일(제공 동의 시), 앱에서 정한 닉네임</td><td>회원 식별, 후기 작성자 표시</td></tr>
   <tr><td>서비스 이용 시 (회원)</td><td>작성한 후기(별점·내용), 누른 따봉, 찜한 메뉴, 신고·차단 기록, 받은 따봉 수와 칭호</td><td>후기·따봉·칭호 기능, 찜한 메뉴 출시일 알림, 부적절한 게시물 관리</td></tr>
+  <tr><td>‘가까운 매장’을 누를 때 (선택)</td><td>현재 위치(위도·경도)</td><td>가까운 지점 검색. 검색에만 쓰고 <b>저장하지 않으며</b>, 위치 권한을 허용한 경우에만 사용합니다.</td></tr>
 </table>
 <p>앱은 위치 정보, 연락처, 사진 등 위에 적지 않은 정보는 수집하지 않습니다.</p>
 
@@ -39,7 +40,7 @@
 <table>
   <tr><th>업체</th><th>맡기는 일</th><th>전달되는 정보</th></tr>
   <tr><td>Supabase Inc.</td><td>회원 인증, 데이터 저장, 서버 운영</td><td>위 1번의 정보</td></tr>
-  <tr><td>㈜카카오</td><td>카카오 로그인</td><td>로그인 요청 정보</td></tr>
+  <tr><td>㈜카카오</td><td>카카오 로그인, 가까운 매장 검색(카카오 로컬)</td><td>로그인 요청 정보, 매장 검색 시 현재 위치</td></tr>
   <tr><td>Apple Inc.</td><td>Apple 로그인 (iOS)</td><td>로그인 요청 정보</td></tr>
   <tr><td>650 Industries, Inc. (Expo)</td><td>푸시 알림 발송</td><td>푸시 알림 토큰, 알림 내용</td></tr>
   <tr><td>Google LLC (Firebase Cloud Messaging)</td><td>안드로이드 푸시 알림 전달</td><td>푸시 알림 토큰, 알림 내용</td></tr>
@@ -56,7 +57,7 @@
 <h2>7. 개인정보 보호책임자 및 문의</h2>
 <p>개인정보 보호책임자: 이용균</p>
 <p>이메일: <a href="mailto:guenguen9797@gmail.com">guenguen9797@gmail.com</a></p>
-<p>시행일: 2026-11-07</p>
+<p>시행일: 2026-11-12 (위치 항목 추가)</p>
 
 <hr />
 
@@ -66,6 +67,7 @@
   <li><b>Without an account</b>: push notification token, device platform and the brands you turned alerts on for — to send new-menu alerts.</li>
   <li><b>Account</b>: identifier and email (if consented) from Kakao or Sign in with Apple, and the nickname you choose.</li>
   <li><b>Activity</b> (members): reviews (rating, text), likes, saved menus, reports and blocks, likes received and titles.</li>
+  <li><b>Location</b> (optional, only when you tap “Nearby stores” and allow location): your current coordinates are sent to Kakao Local search to find nearby branches. They are not stored.</li>
 </ul>
 <p>Reviews are shown to other users together with your nickname, title, rating and date. We do not collect location, contacts or photos.</p>
 <h2>Deletion</h2>
